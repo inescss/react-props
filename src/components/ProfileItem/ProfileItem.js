@@ -1,13 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+import './ProfileItem.css';
 
-const ProfileItem = ({profilprops}) => {
+const ProfileItem = ({profilprops, handleName}) => {
    
     return (
         <div >
-            <h3>{profilprops.FullName}</h3>
-            <h3>{profilprops.Bio}</h3>
-            <h3>{profilprops.Profesion}</h3>
+            <h3> FullName:{profilprops.FullName}</h3>
+            <h3>Bio:{profilprops.Bio}</h3>
+            <h3>Profesion:{profilprops.Profesion}</h3>
+            <button className="button"  onClick={() => handleName(profilprops.FullName)}>name profile</button>
+
         </div>
     )
 }

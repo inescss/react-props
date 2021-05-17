@@ -1,5 +1,6 @@
 
 import './App.css';
+import ImageProfil from './components/imageProfile/ImageProfil';
 import ProfileComponent from './components/profil/ProfileComponent';
 function App() {
   const profile = [
@@ -12,9 +13,13 @@ function App() {
   return (
     <div className="App">
       <h1>personalized profile </h1>
+      <ImageProfil>
+      <img src="https://images.sk-static.com/images/media/profile_images/artists/8293388/huge_avatar" width="250" className="image"  alt=""  />
+      </ImageProfil>
       <ProfileComponent profile={profile}/>
-     <img src="https://i.pinimg.com/originals/5d/57/2d/5d572d653acb9dfc66f45fc42733bb7b.png" width="100" className="image"  alt=""  />
-    </div>
+    </div> 
+
+
   );
 }
 

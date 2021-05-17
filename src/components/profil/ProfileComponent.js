@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const ProfileComponent = ({ profile }) => {
     const handleName = (nom) => {
-        alert(`${FullName} of the profile user`)
+        alert(`${nom} of the profile user`)
     }
     
     return (
